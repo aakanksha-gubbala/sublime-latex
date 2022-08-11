@@ -1,0 +1,81 @@
+<snippet>
+	<content><![CDATA[
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{xhfill}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[tableposition=below]{caption}
+\captionsetup[longtable]{skip=1em}
+
+%% Command for rule after section title
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}}
+
+%% Trailing line after the section title
+\titleformat{\section}
+{\large\bfseries}
+{\thesection \$|\$}
+{0.1cm}
+{\ruleafter}
+
+%% Spacing before and after the title
+\titlespacing*{\section}
+{0pt}{0.4cm}{0.4cm}
+
+%% Spacing before and after \begin{...}
+\setlist{nosep}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+%% Header & footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% %% Bibliography 
+% \usepackage[english]{babel}
+% \usepackage{csquotes}
+% \usepackage[doi=false,isbn=false,url=false,eprint=false,style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+% \addbibresource{}
+% \renewcommand{\bibname}{References}
+
+%% `maketitle` inputs
+\makeatletter
+\def\subject#1{\gdef\@subject{#1}}
+\def\@maketitle{
+	\vspace*{-1.5cm}
+	\rule{\textwidth}{1pt}
+	{\scshape \Large \@title} \hfill {\scshape \Large \@subject} \\\
+	{\scshape \@date} \\\
+	\rule{\textwidth}{1pt}
+}
+\makeatother
+
+\title{${1:title}}
+\subject{${2:subject}}
+\date{\today}
+
+\begin{document}
+\let\endtitlepage\relax
+\setlength{\parindent}{0pt}
+\pagenumbering{arabic}
+\setstretch{1}
+
+\maketitle\thispagestyle{fancy}
+
+\section{${3:section}}
+$4
+\end{document}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>notes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>

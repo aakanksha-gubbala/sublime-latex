@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\begin{subequations}\label{eq:$2}
+	\begin{align}
+		$1
+	\end{align}
+\end{subequations}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>subeqs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>

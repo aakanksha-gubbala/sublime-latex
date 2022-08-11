@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\begin{longtable}{|c|c|c|}
+    \caption{${2:caption}} \\\ \hline
+    \label{${3:label}}
+    \textbf{a} & \textbf{b} & \textbf{c} \\\ \hline
+    1 & 2 & 3 \\\ \hline
+    4 & 5 & 6 \\\ \hline
+\end{longtable}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>table</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>

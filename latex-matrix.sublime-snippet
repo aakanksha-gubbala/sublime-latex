@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\left[
+	\begin{array}{rrr}
+	${1:x_1} & x_2 & 0 \\\
+	0 & x_5 & x_6 \\\
+	x_7 & 0 & x_9 \\\
+	\end{array}
+\right]
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>matrix</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>
