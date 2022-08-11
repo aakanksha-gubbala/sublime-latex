@@ -4,7 +4,5 @@
 
 Generates a template for taking notes.
 
-<img width="400" alt="sample" src="https://user-images.githubusercontent.com/46394857/184149041-3142d8a0-b443-4d64-8ee7-e096ac670264.png">
-
-
+![Screenshot 2022-08-11 at 7 24 21 PM](https://user-images.githubusercontent.com/46394857/184149777-4da9ef12-cf1a-4aa3-b55d-bcfa74eb344b.png)
 
